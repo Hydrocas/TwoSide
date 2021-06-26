@@ -20,6 +20,6 @@ public class Controller : MonoBehaviour
 
         Ray inputRay = mainCamera.ScreenPointToRay(Input.mousePosition);
 
-        Debug.DrawRay(inputRay.origin, inputRay.direction * 100, Color.red, 1000);
+        
     }
 }
