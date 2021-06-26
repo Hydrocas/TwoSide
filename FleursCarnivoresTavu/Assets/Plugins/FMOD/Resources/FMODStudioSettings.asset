@@ -271,8 +271,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../TwoSides FMOD/TwoSides FMOD.fspro
-  sourceBankPath: ../../TwoSides FMOD/Build
+  sourceProjectPath: FMOD/TwoSides FMOD.fspro
+  sourceBankPath: FMOD/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -293,7 +293,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
