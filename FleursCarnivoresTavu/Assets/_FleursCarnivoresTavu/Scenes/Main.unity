@@ -354,6 +354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dayDuration: 10
   nightDuration: 5
+  gardenRotationSpeed: 0
+  garden: {fileID: 4893105}
   isNight: 0
 --- !u!114 &454813521
 MonoBehaviour:

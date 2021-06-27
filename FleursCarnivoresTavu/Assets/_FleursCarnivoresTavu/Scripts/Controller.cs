@@ -9,10 +9,11 @@ public class Controller : MonoBehaviour
     private bool isInit;
     private Ray inputRay;
     private GameManager gameManager;
+    [SerializeField] private LayerMask layerMask;
 
     [HideInInspector]
     public RaycastHit rayHit;
-    public LayerMask layerMask;
+    
 
     public void Init(Camera mainCamera)
     {
