@@ -12,6 +12,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 17f387a7dd1850d47b2c0bd96f4a9132, type: 2}
     - target: {fileID: 849079588321743199, guid: 1a7136c215108b44889f00a9c6163f1e, type: 3}
+      propertyPath: spawnBugLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 849079588321743199, guid: 1a7136c215108b44889f00a9c6163f1e, type: 3}
       propertyPath: givenBugs.BugData
       value: 
       objectReference: {fileID: 11400000, guid: d187ca0fd53206045bc0383dd6bd9c13, type: 2}

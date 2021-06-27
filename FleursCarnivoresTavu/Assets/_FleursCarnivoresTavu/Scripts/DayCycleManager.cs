@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,14 +16,10 @@ public class DayCycleManager : MonoBehaviour
 
     private float _timer = 0f;
 
+    public event Action OnDay;
+    public event Action OnNight;
 
-
-
-    // Start is called before the first frame update
-    void Awake()
-    {
-
-    }
+    public float DayProgress => isNight ? -1 : Mathf.InverseLerp(0, dayDuration, _timer);
 
     // Update is called once per frame
     void Update()
@@ -30,12 +27,13 @@ public class DayCycleManager : MonoBehaviour
         _timer += Time.deltaTime;
         if(_timer>= dayDuration && !isNight)
         {
+            _timer = 0f;
             DoNight();
         }
-        if(_timer>= dayDuration + nightDuration && isNight)
+        if(_timer>= nightDuration && isNight)
         {
-            DoDay();
             _timer = 0f;
+            DoDay();
         }
     }
 
@@ -44,6 +42,7 @@ public class DayCycleManager : MonoBehaviour
 
         isNight = true;
         garden.RotateGarden(-1, gardenRotationSpeed, isNight);
+        OnNight?.Invoke();
         //Debug.Log(isNight);
 
     }
@@ -53,6 +52,7 @@ public class DayCycleManager : MonoBehaviour
 
         isNight = false;
         garden.RotateGarden(0, gardenRotationSpeed, isNight);
+        OnDay?.Invoke();
         //Debug.Log(isNight);
 
     }

@@ -13,9 +13,15 @@ public class BugManager : StateMonoBehaviour
         SetModeVoid();
     }
 
+    private void Update()
+    {
+        DoAction?.Invoke();
+    }
+
     public void Init(DayCycleManager dayCycleManager)
     {
         this.dayCycleManager = dayCycleManager;
+        currentBugsToSpawn = new List<BugSpawnData>();
     }
 
     public void AddBugToSpawn(Flower flower)
@@ -30,7 +36,7 @@ public class BugManager : StateMonoBehaviour
         }
     }
 
-    public void SetDayMode()
+    public void SetModeDay()
     {
         currentBugsToSpawn.Sort(SortSpawnByEarlier);
         SetModeNormal();
@@ -44,9 +50,13 @@ public class BugManager : StateMonoBehaviour
 
     protected override void DoActionNormal()
     {
-        base.DoActionNormal();
+        if (currentBugsToSpawn.Count == 0) return;
 
-        //Spawn Test
+        if(dayCycleManager.DayProgress >= currentBugsToSpawn[0].spawnDelay)
+        {
+            SpawnBug(currentBugsToSpawn[0].bugData, currentBugsToSpawn[0].flower);
+            currentBugsToSpawn.RemoveAt(0);
+        }
     }
 
     private static int SortSpawnByEarlier(BugSpawnData bugSpawn1, BugSpawnData bugSpawn2)
@@ -58,5 +68,10 @@ public class BugManager : StateMonoBehaviour
             return -1;
 
         return 0;
+    }
+
+    private void SpawnBug(BugData bugData, Flower flower)
+    {
+        Debug.Log("Spawn " + bugData.Type + " bug");
     }
 }

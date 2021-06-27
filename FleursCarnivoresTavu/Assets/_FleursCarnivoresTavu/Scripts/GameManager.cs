@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,6 +27,22 @@ public class GameManager : MonoBehaviour
         garden.Init();
         flowerManager.Init(bugManager);
         rootManager.Init();
+        bugManager.Init(dayCycleManager);
+
+        dayCycleManager.OnDay += DayCycleManager_OnDay;
+        dayCycleManager.OnNight += DayCycleManager_OnNight;
+    }
+
+    private void DayCycleManager_OnNight()
+    {
+        flowerManager.SetNightMode();
+        bugManager.SetModeNight();
+    }
+
+    private void DayCycleManager_OnDay()
+    {
+        flowerManager.SetDayMode();
+        bugManager.SetModeDay();
     }
 
     public void RayHit(RaycastHit rayHit)
