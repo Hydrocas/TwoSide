@@ -352,8 +352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a186fe48c97ba8045a0fc0750aeb4a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayDuration: 0
-  nightDuration: 0
+  dayDuration: 10
+  nightDuration: 5
   isNight: 0
 --- !u!114 &454813521
 MonoBehaviour:
