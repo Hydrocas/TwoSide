@@ -1,18 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class Flower : MonoBehaviour
+public class Flower : Plant
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private BugStack givenBugs = default;
+    [SerializeField] private int spawnBugLevel = 2;
+
+    public BugStack GivenBugs => givenBugs;
+
+    public event Action<Flower> OnGiveBugs;
+
+    private void Awake()
     {
-        
+        SetModeVoid();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetDayMode()
     {
-        
+        SetModeNormal();
+
+        if(growthLevel >= spawnBugLevel)
+        {
+            OnGiveBugs?.Invoke(this);
+        }
+    }
+
+    public void SetNightMode()
+    {
+        SetModeVoid();
+    }
+
+    private void Update()
+    {
+        DoAction();
     }
 }

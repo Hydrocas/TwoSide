@@ -325,6 +325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924aa689702ae0b489f99708ba92fb40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &454813519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,6 +352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a186fe48c97ba8045a0fc0750aeb4a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dayDuration: 10
+  nightDuration: 5
+  gardenRotationSpeed: 0
+  garden: {fileID: 4893105}
+  isNight: 0
 --- !u!114 &454813521
 MonoBehaviour:
   m_ObjectHideFlags: 0

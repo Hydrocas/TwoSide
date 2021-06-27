@@ -15,4 +15,10 @@ public class Inventory : MonoBehaviour
     {
         
     }
+
+    public GameObject SelectedFlower()
+    {
+        GameObject selectedFlower = null;
+        return selectedFlower;
+    }
 }
