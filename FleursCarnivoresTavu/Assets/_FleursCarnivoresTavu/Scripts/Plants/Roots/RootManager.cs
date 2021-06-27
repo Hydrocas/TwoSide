@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class RootManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private List<Root> roots = null;
+
+    public void Init()
     {
-        
+        roots = new List<Root>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddRoot(Root root, Flower flower)
     {
-        
+        roots.Add(root);
+        root.Init(flower);
     }
 }

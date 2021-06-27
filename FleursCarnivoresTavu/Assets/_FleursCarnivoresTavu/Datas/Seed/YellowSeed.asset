@@ -15,3 +15,4 @@ MonoBehaviour:
   type: 2
   sprite: {fileID: 21300000, guid: abc013b28b551bb47a6e1e3d4de0f6e1, type: 3}
   flower: {fileID: 3378030450248277037, guid: c56990e3231488c4c9cc7d02fb337c8c, type: 3}
+  root: {fileID: 7035876013978309551, guid: 95bb3290f45ad6e438522639636ca583, type: 3}

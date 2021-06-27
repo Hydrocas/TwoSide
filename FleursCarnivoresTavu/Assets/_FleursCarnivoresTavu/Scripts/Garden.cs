@@ -8,8 +8,12 @@ public class Garden : MonoBehaviour
 
     [SerializeField] private GameObject gardenGround;
     [SerializeField] private GameObject background;
+    [SerializeField] private Collider gardenCollider;
     private Vector3 bgDayPos;
     private Vector3 bgNightPos;
+
+    public float Height => gardenCollider.bounds.size.y; 
+
     // Start is called before the first frame update
     public void Init()
     {
