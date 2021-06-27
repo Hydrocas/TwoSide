@@ -27,6 +27,6 @@ public class FlowerManager : MonoBehaviour
 
     private void Flower_OnGiveBugs(Flower flower)
     {
-        
+        bugManager.AddBugToSpawn(flower);
     }
 }

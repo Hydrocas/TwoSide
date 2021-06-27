@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Plant : StateMonoBehaviour
+public class Plant : MonoBehaviour
 {
     [SerializeField] protected int maxGrowthLevel = 3;
     [SerializeField] private SpriteRenderer spriteRenderer = null;
