@@ -38,6 +38,9 @@
 		<relationship name="parameters">
 			<destination>{4f5b00f4-bad0-4c38-9e6f-76cb6bbfa2fb}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{77460ab1-7385-4bd0-95eb-308c59045242}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{9fa950de-517b-4a1e-a5c2-d7cefec695ab}">
 		<relationship name="masterBus">
@@ -50,6 +53,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{386f967f-77e8-45c7-b8f0-42e6c85d627a}">
+		<relationship name="masters">
+			<destination>{8f576fbc-acbf-4885-800a-7e7d97bbc611}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{16a8a18c-79de-4296-a699-7cc645f5c7ef}</destination>
 		</relationship>
@@ -120,6 +126,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{ebe3659a-8225-4eec-8074-b8523c36bead}">
+		<relationship name="modulators">
+			<destination>{39573499-3634-4cd3-8f52-292f06c08a2c}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{59f3ff69-a53f-4029-98e5-288d4e1c0ef1}</destination>
 		</relationship>
@@ -390,6 +399,20 @@
 		<relationship name="triggerConditions">
 			<destination>{8babd600-6c39-4b6f-b117-f7ce2b6d21eb}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{39573499-3634-4cd3-8f52-292f06c08a2c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{59f3ff69-a53f-4029-98e5-288d4e1c0ef1}">
 		<relationship name="effects">
