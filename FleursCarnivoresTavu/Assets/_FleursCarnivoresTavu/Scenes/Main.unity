@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gardenGround: {fileID: 14937360}
   background: {fileID: 1592044969}
+  gardenCollider: {fileID: 14937364}
 --- !u!4 &4893106
 Transform:
   m_ObjectHideFlags: 0
