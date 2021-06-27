@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FlowerManager : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,11 @@ public class FlowerManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+    public void SpawnFlower(Vector3 spawnPosition, GameObject flower) // Spawn flower on position
+    {
+        Instantiate(flower, spawnPosition, Quaternion.identity);
     }
 }
