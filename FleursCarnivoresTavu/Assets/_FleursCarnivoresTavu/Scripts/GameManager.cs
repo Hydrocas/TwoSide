@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         flowerManager = GetComponent<FlowerManager>();
 
         controller.Init(mainCamera);
+        garden.Init();
     }
 
     public void RayHit(RaycastHit rayHit)

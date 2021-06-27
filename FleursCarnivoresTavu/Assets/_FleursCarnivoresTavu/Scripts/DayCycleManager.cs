@@ -7,7 +7,7 @@ public class DayCycleManager : MonoBehaviour
 {
     [SerializeField] private float dayDuration = 10f;
     [SerializeField] private float nightDuration = 5f;
-    [SerializeField] private float gardenRotationSpeed;
+    [SerializeField] private float gardenRotationSpeed = 2f;
     [SerializeField] private Garden garden;
 
     [HideInInspector]
@@ -41,15 +41,19 @@ public class DayCycleManager : MonoBehaviour
 
     void DoNight()
     {
+
         isNight = true;
+        garden.RotateGarden(-1, gardenRotationSpeed, isNight);
         //Debug.Log(isNight);
-        garden.RotateGarden(-1, 2f);
+
     }
 
     void DoDay()
     {
+
         isNight = false;
+        garden.RotateGarden(0, gardenRotationSpeed, isNight);
         //Debug.Log(isNight);
-        garden.RotateGarden(0, 2f);
+
     }
 }
