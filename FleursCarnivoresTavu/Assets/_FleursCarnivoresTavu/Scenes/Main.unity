@@ -723,7 +723,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8c4ed8330377f63489f5ba7c4a8a10e7, type: 2}
   - {fileID: 11400000, guid: 17f387a7dd1850d47b2c0bd96f4a9132, type: 2}
   - {fileID: 11400000, guid: f1f33a884dd77a6419d738af248368a5, type: 2}
-  bugData: []
+  bugData:
+  - {fileID: 11400000, guid: 6fcfc3ca48fae6b41bf7184ab2688606, type: 2}
+  - {fileID: 11400000, guid: d187ca0fd53206045bc0383dd6bd9c13, type: 2}
+  - {fileID: 11400000, guid: 06ca55577fe38da4e96dc7adeb646bca, type: 2}
+  seedInventory:
+  - SeedData: {fileID: 11400000, guid: 8c4ed8330377f63489f5ba7c4a8a10e7, type: 2}
+    inventoryAmount: 0
+  - SeedData: {fileID: 11400000, guid: 17f387a7dd1850d47b2c0bd96f4a9132, type: 2}
+    inventoryAmount: 0
+  - SeedData: {fileID: 11400000, guid: f1f33a884dd77a6419d738af248368a5, type: 2}
+    inventoryAmount: 0
+  bugInventory:
+  - BugData: {fileID: 11400000, guid: 6fcfc3ca48fae6b41bf7184ab2688606, type: 2}
+    inventoryAmount: 0
+  - BugData: {fileID: 11400000, guid: d187ca0fd53206045bc0383dd6bd9c13, type: 2}
+    inventoryAmount: 0
+  - BugData: {fileID: 11400000, guid: 06ca55577fe38da4e96dc7adeb646bca, type: 2}
+    inventoryAmount: 0
 --- !u!114 &454813520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,7 +1370,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Insect Bleu
+  m_Text: Insect Yellow
 --- !u!222 &706268683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1565,7 +1582,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Insect Jaune
+  m_Text: Insect  Blue
 --- !u!222 &849207141
 CanvasRenderer:
   m_ObjectHideFlags: 0

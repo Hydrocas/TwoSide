@@ -6,6 +6,8 @@ public class Inventory : MonoBehaviour
 {
     [SerializeField] private SeedData[] seedData;
     [SerializeField] private BugData[] bugData;
+    [SerializeField]private SeedInventory[] seedInventory;
+    [SerializeField] private BugInventory[] bugInventory;
 
     private int seedIndex;
     private int bugIndex;
