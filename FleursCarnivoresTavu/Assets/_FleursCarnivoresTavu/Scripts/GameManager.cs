@@ -31,5 +31,7 @@ public class GameManager : MonoBehaviour
         {
             flowerManager.SpawnFlower(rayHit.point, inventory.SelectedFlower());
         }
+
+        //inventory.CurrentSeed.flower
     }
 }
