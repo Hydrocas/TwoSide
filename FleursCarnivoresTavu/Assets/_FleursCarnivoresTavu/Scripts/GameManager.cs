@@ -25,13 +25,24 @@ public class GameManager : MonoBehaviour
         controller.Init(mainCamera);
         garden.Init();
         flowerManager.Init(bugManager);
+        rootManager.Init();
     }
 
     public void RayHit(RaycastHit rayHit)
     {
         if (rayHit.collider.CompareTag("Garden") && !dayCycleManager.isNight) // If Player clicked garden during day
         {
-            flowerManager.SpawnFlower(rayHit.point, inventory.CurrentSeed.flower);
+            SpawnPlants(rayHit.point, inventory.CurrentSeed);
         }
+    }
+
+    private void SpawnPlants(Vector3 spawnPos, SeedData seedData)
+    {
+        Flower flower = Instantiate(seedData.flower, spawnPos, Quaternion.identity, garden.transform);
+        spawnPos.y -= garden.Height;
+        Root root = Instantiate(seedData.root, spawnPos, Quaternion.AngleAxis(180, Vector3.forward), garden.transform);
+
+        flowerManager.AddFlower(flower);
+        rootManager.AddRoot(root, flower);
     }
 }

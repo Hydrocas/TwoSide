@@ -25,7 +25,7 @@ public class Flower : Plant
 
     public void Init()
     {
-        Grow();
+
     }
 
     public void SetDayMode()

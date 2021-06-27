@@ -14,10 +14,10 @@ PrefabInstance:
     - target: {fileID: 849079588321743199, guid: 1a7136c215108b44889f00a9c6163f1e, type: 3}
       propertyPath: givenBugs.BugData
       value: 
-      objectReference: {fileID: 11400000, guid: 6fcfc3ca48fae6b41bf7184ab2688606, type: 2}
+      objectReference: {fileID: 11400000, guid: 06ca55577fe38da4e96dc7adeb646bca, type: 2}
     - target: {fileID: 849079588321743199, guid: 1a7136c215108b44889f00a9c6163f1e, type: 3}
       propertyPath: givenBugs.GivenNumber
-      value: 1
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 849079588321743199, guid: 1a7136c215108b44889f00a9c6163f1e, type: 3}
       propertyPath: growthSprites.Array.size

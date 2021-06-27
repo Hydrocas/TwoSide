@@ -13,15 +13,9 @@ public class FlowerManager : MonoBehaviour
         this.bugManager = bugManager;
     }
 
-    public void SpawnFlower(Vector3 spawnPosition, Flower flowerPrefab) // Spawn flower on position
-    {
-        Flower lFlower = Instantiate(flowerPrefab, spawnPosition, Quaternion.identity);
-        lFlower.Init();
-        AddFlower(lFlower);
-    }
-
     public void AddFlower(Flower flower)
     {
+        flower.Init();
         flowerList.Add(flower);
         flower.OnGiveBugs += Flower_OnGiveBugs;
     }

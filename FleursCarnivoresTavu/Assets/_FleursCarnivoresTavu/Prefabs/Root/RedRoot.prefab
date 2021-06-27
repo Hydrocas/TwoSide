@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
+      propertyPath: scaleGrowthLevel.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
+      propertyPath: scaleGrowthLevel.Array.data[0]
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
+      propertyPath: scaleGrowthLevel.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
+      propertyPath: scaleGrowthLevel.Array.data[2]
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2530696108957215776, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8876607011040161459, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: m_Name
-      value: Root
+      value: RedRoot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
