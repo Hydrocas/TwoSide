@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +5,7 @@ public class FlowerManager : MonoBehaviour
 {
     private List<Flower> flowerList = null;
     private BugManager bugManager;
+    public Flower debugFlower;
 
     public void Init(BugManager bugManager)
     {
@@ -14,9 +13,11 @@ public class FlowerManager : MonoBehaviour
         this.bugManager = bugManager;
     }
 
-    public void SpawnFlower(Vector3 spawnPosition, GameObject flower) // Spawn flower on position
+    public void SpawnFlower(Vector3 spawnPosition, Flower flowerPrefab) // Spawn flower on position
     {
-        Instantiate(flower, spawnPosition, Quaternion.identity);
+        Flower lFlower = Instantiate(debugFlower, spawnPosition, Quaternion.identity);
+        lFlower.Init();
+        AddFlower(lFlower);
     }
 
     public void AddFlower(Flower flower)
