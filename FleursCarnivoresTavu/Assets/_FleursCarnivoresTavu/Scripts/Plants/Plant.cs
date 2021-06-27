@@ -6,19 +6,19 @@ using UnityEngine;
 public class Plant : MonoBehaviour
 {
     [SerializeField] protected int maxGrowthLevel = 3;
-    [SerializeField] private SpriteRenderer spriteRenderer = null;
-    [SerializeField] private Sprite[] growthSprites = null;
     [SerializeField] private Sprite deathSprite = null;
+    [SerializeField] protected SpriteRenderer spriteRenderer = null;
 
     protected int growthLevel = -1;
     private bool isDead = false;
 
-    public virtual void Grow()
+    public virtual bool Grow()
     {
-        if (growthLevel == maxGrowthLevel) return;
+        if (growthLevel == maxGrowthLevel) return false;
 
         growthLevel++;
-        spriteRenderer.sprite = growthSprites[growthLevel];
+
+        return true;
     }
 
     public void Die()
