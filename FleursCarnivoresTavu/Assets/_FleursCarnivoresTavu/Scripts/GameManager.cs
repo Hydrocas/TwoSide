@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Garden garden = null;
     [SerializeField] private Camera mainCamera = null;
+    [SerializeField] private BugManager bugManager = null;
 
     private DayCycleManager dayCycleManager;
     private Inventory inventory;
@@ -23,15 +24,14 @@ public class GameManager : MonoBehaviour
 
         controller.Init(mainCamera);
         garden.Init();
+        flowerManager.Init(bugManager);
     }
 
     public void RayHit(RaycastHit rayHit)
     {
         if (rayHit.collider.CompareTag("Garden") && !dayCycleManager.isNight) // If Player clicked garden during day
         {
-            flowerManager.SpawnFlower(rayHit.point, inventory.SelectedFlower());
+            flowerManager.SpawnFlower(rayHit.point, inventory.CurrentSeed.flower);
         }
-
-        //inventory.CurrentSeed.flower
     }
 }

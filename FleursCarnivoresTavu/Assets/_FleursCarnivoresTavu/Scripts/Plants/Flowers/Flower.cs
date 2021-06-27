@@ -13,6 +13,11 @@ public class Flower : Plant
 
     private bool hasFruit;
 
+    public void Init()
+    {
+        Grow();
+    }
+
     public void SetDayMode()
     {
         if(growthLevel >= spawnBugLevel)
