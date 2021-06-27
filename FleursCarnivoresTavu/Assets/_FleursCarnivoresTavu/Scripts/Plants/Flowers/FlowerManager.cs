@@ -15,7 +15,7 @@ public class FlowerManager : MonoBehaviour
 
     public void SpawnFlower(Vector3 spawnPosition, Flower flowerPrefab) // Spawn flower on position
     {
-        Flower lFlower = Instantiate(debugFlower, spawnPosition, Quaternion.identity);
+        Flower lFlower = Instantiate(flowerPrefab, spawnPosition, Quaternion.identity);
         lFlower.Init();
         AddFlower(lFlower);
     }
