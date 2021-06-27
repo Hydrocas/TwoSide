@@ -8,6 +8,11 @@ public class Inventory : MonoBehaviour
 
     private int seedIndex;
 
+    public void SetCurrentSeed(int currentSeed)
+    {
+        seedIndex = currentSeed;
+        Debug.Log(seedIndex);
+    }
     public SeedData CurrentSeed => seedData[seedIndex];
 
     public GameObject SelectedFlower()
