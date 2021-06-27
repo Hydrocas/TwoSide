@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private SeedData[] seedData;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private int seedIndex;
+
+    public SeedData CurrentSeed => seedData[seedIndex];
 
     public GameObject SelectedFlower()
     {
