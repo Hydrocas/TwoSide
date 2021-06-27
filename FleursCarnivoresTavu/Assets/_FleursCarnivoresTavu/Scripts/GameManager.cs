@@ -22,5 +22,14 @@ public class GameManager : MonoBehaviour
         flowerManager = GetComponent<FlowerManager>();
 
         controller.Init(mainCamera);
+        garden.Init();
+    }
+
+    public void RayHit(RaycastHit rayHit)
+    {
+        if (rayHit.collider.CompareTag("Garden") && !dayCycleManager.isNight) // If Player clicked garden during day
+        {
+            flowerManager.SpawnFlower(rayHit.point, inventory.SelectedFlower());
+        }
     }
 }
