@@ -1,14 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField]private SeedInventory[] seedInventory;
+    [SerializeField]public SeedInventory[] seedInventory;
     [SerializeField] private BugInventory[] bugInventory;
+
+
+    [SerializeField] private TextMeshProUGUI[] UIseedElements;
+    [SerializeField] private TextMeshProUGUI[] UIBugElements;
+
 
     private int seedIndex = -1;
     private int bugIndex = -1;
+
+    public void Update()
+    {
+        for (int i = 0; i < seedInventory.Length; i++)
+        {
+            UIseedElements[i].text = seedInventory[i].inventoryAmount.ToString();
+        }
+
+        for (int i = 0; i < bugInventory.Length; i++)
+        {
+            UIBugElements[i].text = bugInventory[i].inventoryAmount.ToString();
+        }
+    }
 
     public SeedInventory CurrentSeed 
     {
@@ -50,7 +69,6 @@ public class Inventory : MonoBehaviour
         SeedInventory currentSeed = CurrentSeed;
         currentSeed.inventoryAmount--;
         CurrentSeed = currentSeed;
-
         return currentSeed.SeedData;
     }
 
@@ -61,7 +79,6 @@ public class Inventory : MonoBehaviour
         BugInventory currentBug = CurrentBug;
         currentBug.inventoryAmount--;
         CurrentBug = currentBug;
-
         return CurrentBug.BugData;
     }
 
