@@ -137,11 +137,17 @@
 		</property>
 	</object>
 	<object class="SingleSound" id="{f3f54be3-3cfe-4773-95a8-9dba6931e3a5}">
+		<property name="volume">
+			<value>2</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{c2ba6387-021a-41a6-a803-8b7df26154bd}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{f7ee38c9-3d73-4ac4-a1a2-c6b9951f9da5}">
+		<property name="volume">
+			<value>2</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{db26c8b6-7756-4a92-8846-b12d2e3e1d3b}</destination>
 		</relationship>
