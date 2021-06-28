@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 394897404}
   - component: {fileID: 394897403}
   - component: {fileID: 394897402}
+  - component: {fileID: 394897405}
   m_Layer: 5
   m_Name: SFX_Off
   m_TagString: Untagged
@@ -346,6 +347,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394897400}
   m_CullTransparentMesh: 1
+--- !u!114 &394897405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394897400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 258927656}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: UIMoveSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &437446684
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,6 +631,7 @@ GameObject:
   - component: {fileID: 648260096}
   - component: {fileID: 648260098}
   - component: {fileID: 648260099}
+  - component: {fileID: 648260100}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -752,6 +783,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &648260100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648260094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 258927656}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: UIMoveSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &755439482
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +988,7 @@ GameObject:
   - component: {fileID: 1010671375}
   - component: {fileID: 1010671374}
   - component: {fileID: 1010671376}
+  - component: {fileID: 1010671377}
   m_Layer: 5
   m_Name: SFX_On
   m_TagString: Untagged
@@ -1072,6 +1133,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &1010671377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010671372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 258927656}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: UIMoveSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1115122431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,6 +1175,7 @@ GameObject:
   - component: {fileID: 1115122433}
   - component: {fileID: 1115122435}
   - component: {fileID: 1115122436}
+  - component: {fileID: 1115122437}
   m_Layer: 5
   m_Name: Credits Button
   m_TagString: Untagged
@@ -1236,6 +1327,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1115122437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115122431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 258927656}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: UIMoveSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1511489603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1567,7 @@ GameObject:
   - component: {fileID: 1817726346}
   - component: {fileID: 1817726345}
   - component: {fileID: 1817726344}
+  - component: {fileID: 1817726347}
   m_Layer: 5
   m_Name: Music_Off
   m_TagString: Untagged
@@ -1591,6 +1712,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1817726342}
   m_CullTransparentMesh: 1
+--- !u!114 &1817726347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817726342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 258927656}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: UIMoveSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1829160008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,6 +1797,7 @@ GameObject:
   - component: {fileID: 1868015392}
   - component: {fileID: 1868015391}
   - component: {fileID: 1868015393}
+  - component: {fileID: 1868015394}
   m_Layer: 5
   m_Name: Music_On
   m_TagString: Untagged
@@ -1791,6 +1942,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &1868015394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868015389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 258927656}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: UIMoveSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2078058198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,17 +2145,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2078058198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/SFX/UI/UI Click
-  PlayEvent: 15
-  StopEvent: 16
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 258927656}
+          m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+          m_MethodName: UIMoveSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
