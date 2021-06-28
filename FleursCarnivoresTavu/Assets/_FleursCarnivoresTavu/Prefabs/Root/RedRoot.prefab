@@ -8,12 +8,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
+      propertyPath: maxGrowthLevel
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: scaleGrowthLevel.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: scaleGrowthLevel.Array.data[0]
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: scaleGrowthLevel.Array.data[1]
@@ -21,7 +25,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2384532769131182271, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: scaleGrowthLevel.Array.data[2]
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 2530696108957215776, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: m_RootOrder
@@ -67,6 +71,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6917329961081877155, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 9b685eac047df9f41b610a7dfaa1a078, type: 2}
     - target: {fileID: 8876607011040161459, guid: 98939c5a7c318f844a06dd28d30ea7a3, type: 3}
       propertyPath: m_Name
       value: RedRoot

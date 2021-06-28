@@ -12,7 +12,9 @@ public class Garden : MonoBehaviour
     private Vector3 bgDayPos;
     private Vector3 bgNightPos;
 
-    public float Height => gardenCollider.bounds.size.y; 
+    public float Height => gardenCollider.bounds.size.y;
+
+    public GameObject GardenGround => gardenGround;
 
     // Start is called before the first frame update
     public void Init()

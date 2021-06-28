@@ -13,6 +13,22 @@ public class FlowerManager : MonoBehaviour
         this.bugManager = bugManager;
     }
 
+    public void SetNightMode()
+    {
+        for (int i = 0; i < flowerList.Count; i++)
+        {
+            flowerList[i].SetNightMode();
+        }
+    }
+
+    public void SetDayMode()
+    {
+        for (int i = 0; i < flowerList.Count; i++)
+        {
+            flowerList[i].SetDayMode();
+        }
+    }
+
     public void AddFlower(Flower flower)
     {
         flower.Init();
