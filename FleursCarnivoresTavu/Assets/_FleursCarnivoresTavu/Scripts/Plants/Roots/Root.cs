@@ -6,9 +6,11 @@ public class Root : Plant
 {
     [SerializeField] private float[] scaleGrowthLevel;
     private Flower linkedFlower;
+    private Animator animator;
 
     public void Init(Flower linkedFlower)
     {
+        animator = GetComponent<Animator>();
         this.linkedFlower = linkedFlower;
         Grow();
     }
@@ -21,5 +23,10 @@ public class Root : Plant
         linkedFlower.Grow();
 
         return true;
+    }
+
+    public void Feed()
+    {
+        animator.SetTrigger("eat");
     }
 }

@@ -51,6 +51,15 @@ public class GameManager : MonoBehaviour
         {
             SpawnPlants(rayHit.point, inventory.CurrentSeed);
         }
+        else if(rayHit.collider.CompareTag("Root") && dayCycleManager.isNight)
+        {
+            Root root = rayHit.collider.GetComponent<Root>();
+
+            if (root == null) return;
+
+            root.Feed();
+            root.Grow();
+        }
     }
 
     private void SpawnPlants(Vector3 spawnPos, SeedData seedData)
