@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c2ba6387-021a-41a6-a803-8b7df26154bd}">
+		<property name="assetPath">
+			<value>SFX/insect_pick_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.38188208616780045</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7bac235e-aeef-4835-b2e2-45b1a7b023bf}</destination>
+		</relationship>
+	</object>
+</objects>

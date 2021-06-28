@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerVCA" id="{8f576fbc-acbf-4885-800a-7e7d97bbc611}">
+		<property name="name">
+			<value>Music</value>
+		</property>
+		<relationship name="automators">
+			<destination>{4355b3b7-2f71-4b39-b720-1defb0d13328}</destination>
+		</relationship>
+		<relationship name="modulators">
+			<destination>{c4182d74-4e13-477d-864d-7a3d6956db7d}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{216fdc17-cde3-41e2-bdbe-3d60872573b0}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{4355b3b7-2f71-4b39-b720-1defb0d13328}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+	</object>
+	<object class="ADSRModulator" id="{c4182d74-4e13-477d-864d-7a3d6956db7d}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
+</objects>

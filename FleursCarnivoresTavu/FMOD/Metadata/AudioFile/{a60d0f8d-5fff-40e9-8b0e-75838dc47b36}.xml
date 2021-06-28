@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{a60d0f8d-5fff-40e9-8b0e-75838dc47b36}">
+		<property name="assetPath">
+			<value>SFX/seed_plant_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.4841043083900227</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7bac235e-aeef-4835-b2e2-45b1a7b023bf}</destination>
+		</relationship>
+	</object>
+</objects>

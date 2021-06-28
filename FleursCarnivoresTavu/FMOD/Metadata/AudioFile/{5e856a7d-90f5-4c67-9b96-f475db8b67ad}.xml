@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{5e856a7d-90f5-4c67-9b96-f475db8b67ad}">
+		<property name="assetPath">
+			<value>AMB/amb_night_long.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>53</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7bac235e-aeef-4835-b2e2-45b1a7b023bf}</destination>
+		</relationship>
+	</object>
+</objects>
