@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="MixerVCA" id="{40d5668d-988d-46c4-9a56-72a34f8e09da}">
+		<property name="volume">
+			<value>4</value>
+		</property>
+		<property name="name">
+			<value>SFX</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{050829ff-dd8a-422d-81cc-940348a3c9fe}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{216fdc17-cde3-41e2-bdbe-3d60872573b0}</destination>
+		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{050829ff-dd8a-422d-81cc-940348a3c9fe}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
+</objects>

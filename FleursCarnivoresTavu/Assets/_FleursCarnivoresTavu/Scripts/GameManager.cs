@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     private RootManager rootManager;
     private FlowerManager flowerManager;
 
+
     private void Awake()
     {
         dayCycleManager = GetComponent<DayCycleManager>();
@@ -24,11 +25,13 @@ public class GameManager : MonoBehaviour
         rootManager = GetComponent<RootManager>();
         flowerManager = GetComponent<FlowerManager>();
 
+        dayCycleManager.Init();
         controller.Init(mainCamera);
         garden.Init();
         flowerManager.Init(bugManager);
         rootManager.Init();
         bugManager.Init(dayCycleManager);
+        
 
         dayCycleManager.OnDay += DayCycleManager_OnDay;
         dayCycleManager.OnNight += DayCycleManager_OnNight;
@@ -41,13 +44,16 @@ public class GameManager : MonoBehaviour
         flowerManager.SetNightMode();
         rootManager.SetModeNight();
         bugManager.SetModeNight();
+        
     }
 
     private void DayCycleManager_OnDay()
     {
+        
         flowerManager.SetDayMode();
         rootManager.SetModeDay();
         bugManager.SetModeDay();
+        
     }
 
     public void RayHit(RaycastHit rayHit)
@@ -79,11 +85,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void SpawnPlants(Vector3 spawnPos, SeedData seedData)
+    private void SpawnPlants(Vector3 spawnPos, SeedInventory seedData)
     {
-        Flower flower = Instantiate(seedData.flower, spawnPos, Quaternion.identity, garden.GardenGround.transform);
+        Flower flower = Instantiate(seedData.SeedData.flower, spawnPos, Quaternion.identity, garden.GardenGround.transform);
         spawnPos.y -= garden.Height;
-        Root root = Instantiate(seedData.root, spawnPos, Quaternion.AngleAxis(180, Vector3.forward), garden.GardenGround.transform);
+        Root root = Instantiate(seedData.SeedData.root, spawnPos, Quaternion.AngleAxis(180, Vector3.forward), garden.GardenGround.transform);
 
         flowerManager.AddFlower(flower);
         rootManager.AddRoot(root, flower);

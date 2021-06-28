@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{2949b3f2-d63d-47fc-9aae-33f9afc70384}">
+		<property name="assetPath">
+			<value>AMB/amb_night_short_04.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7bac235e-aeef-4835-b2e2-45b1a7b023bf}</destination>
+		</relationship>
+	</object>
+</objects>

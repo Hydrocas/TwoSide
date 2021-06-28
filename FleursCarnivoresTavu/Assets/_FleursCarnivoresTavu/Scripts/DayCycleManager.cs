@@ -10,6 +10,7 @@ public class DayCycleManager : MonoBehaviour
     [SerializeField] private float nightDuration = 5f;
     [SerializeField] private float gardenRotationSpeed = 2f;
     [SerializeField] private Garden garden;
+    private MusicManager musicManager;
 
     [HideInInspector]
     public bool isNight = false;
@@ -44,7 +45,7 @@ public class DayCycleManager : MonoBehaviour
         garden.RotateGarden(-1, gardenRotationSpeed, isNight);
         OnNight?.Invoke();
         //Debug.Log(isNight);
-
+        musicManager.NightSoundState();
     }
 
     void DoDay()
@@ -54,6 +55,16 @@ public class DayCycleManager : MonoBehaviour
         garden.RotateGarden(0, gardenRotationSpeed, isNight);
         OnDay?.Invoke();
         //Debug.Log(isNight);
+        musicManager.DaySoundState();
 
+
+
+    }
+
+    public void Init()
+    {
+
+        musicManager = GameObject.FindGameObjectWithTag("MusicManager").gameObject.GetComponent<MusicManager>();
+        //musicManager.DaySoundState();
     }
 }
