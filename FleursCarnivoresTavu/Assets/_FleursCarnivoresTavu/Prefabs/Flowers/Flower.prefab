@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6488901309370607761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.85333335, z: 0}
-  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+  m_LocalPosition: {x: 0, y: 0.716, z: 0}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 2530696108957215776}
   m_RootOrder: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f1586d5f8e9103c46a482dac43b1799c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 177fb2591eb545d409cbbafbceb3f159, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2530696108957215776}
   - component: {fileID: 849079588321743199}
+  - component: {fileID: -4558806110668915788}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -107,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8876607011040161459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 2.7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4095518704911938556}
@@ -126,7 +127,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b15566c8edebe604bb360148b5416f8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 1921352944428677430}
-  growthSprites: []
+  maxGrowthLevel: 3
   deathSprite: {fileID: 21300000, guid: 75f38eb7b911b064aab9beeaf5466658, type: 3}
-  givenBugs: []
+  spriteRenderer: {fileID: 1921352944428677430}
+  givenBugs:
+    BugData: {fileID: 0}
+    GivenNumber: 0
+  givenSeed: {fileID: 0}
+  spawnBugLevel: 2
+--- !u!95 &-4558806110668915788
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876607011040161459}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b4d8649541d6874ebb24345158f3260, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
