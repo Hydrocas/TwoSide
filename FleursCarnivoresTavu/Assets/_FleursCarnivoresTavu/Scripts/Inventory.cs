@@ -7,16 +7,32 @@ public class Inventory : MonoBehaviour
     [SerializeField]private SeedInventory[] seedInventory;
     [SerializeField] private BugInventory[] bugInventory;
 
-    private int seedIndex;
-    private int bugIndex;
+    private int seedIndex = -1;
+    private int bugIndex = -1;
 
+    public SeedInventory CurrentSeed 
+    {
+        get => seedInventory[seedIndex]; 
+        set
+        {
+            seedInventory[seedIndex] = value;
+        }
+    }
+    public BugInventory CurrentBug 
+    {
+        get => bugInventory[bugIndex]; 
+        set
+        {
+            bugInventory[bugIndex] = value;
+        }
+    }
 
     public void SetCurrentSeed(int currentSeed)
     {
        // if (!(seedInventory[currentSeed].inventoryAmount > 0))
 
         seedIndex = currentSeed;
-        //Debug.Log(seedIndex);
+        bugIndex = -1;
     }
 
     public void SetCurrentBug(int currentBug)
@@ -24,31 +40,56 @@ public class Inventory : MonoBehaviour
         //if (!(bugInventory[currentBug].inventoryAmount > 0)) return ;
 
         bugIndex = currentBug;
-        
+        seedIndex = -1;
     }
 
-    public SeedInventory CurrentSeed => seedInventory[seedIndex];
-    public BugInventory CurrentBug => bugInventory[bugIndex];
-
-    //public GameObject SelectedFlower()
-    //{
-    //    GameObject selectedFlower = null;
-    //    return selectedFlower;
-    //}
-
-    public void AddSeed(int seedIndex)
+    public SeedData TakeCurrentSeed()
     {
-        seedInventory[seedIndex].inventoryAmount += 1;
-        Debug.Log(seedInventory[seedIndex].inventoryAmount);
+        if (seedIndex == -1 || CurrentSeed.inventoryAmount <= 0) return null;
+
+        SeedInventory currentSeed = CurrentSeed;
+        currentSeed.inventoryAmount--;
+        CurrentSeed = currentSeed;
+
+        return currentSeed.SeedData;
     }
 
-    public void RemoveSeed(SeedInventory currentSeed)
+    public BugData TakeCurrentBug()
     {
-        if ((currentSeed.inventoryAmount > 0))
+        if (bugIndex == -1 || CurrentBug.inventoryAmount <= 0) return null;
+
+        BugInventory currentBug = CurrentBug;
+        currentBug.inventoryAmount--;
+        CurrentBug = currentBug;
+
+        return CurrentBug.BugData;
+    }
+
+    public void AddSeed(SeedData seedData)
+    {
+        for (int i = 0; i < seedInventory.Length; i++)
         {
-            currentSeed.inventoryAmount -= 1;
-            Debug.Log(currentSeed.inventoryAmount);
+            if (seedInventory[i].SeedData.type == seedData.type)
+            {
+                SeedInventory seedIventory = seedInventory[i];
+                seedIventory.inventoryAmount++;
+                seedInventory[i] = seedIventory;
+                return;
+            }
         }
+    }
 
+    public void AddBug(BugData bugData)
+    {
+        for (int i = 0; i < bugInventory.Length; i++)
+        {
+            if (bugInventory[i].BugData.Type == bugData.Type)
+            {
+                BugInventory bugIventory = bugInventory[i];
+                bugIventory.inventoryAmount++;
+                bugInventory[i] = bugIventory;
+                return;
+            }
+        }
     }
 }

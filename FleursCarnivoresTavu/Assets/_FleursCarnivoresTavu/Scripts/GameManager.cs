@@ -51,7 +51,11 @@ public class GameManager : MonoBehaviour
     {
         if (rayHit.collider.CompareTag("Garden") && !dayCycleManager.isNight) // If Player clicked garden during day
         {
-            SpawnPlants(rayHit.point, inventory.CurrentSeed);
+            SeedData seed = inventory.TakeCurrentSeed();
+
+            if (seed == null) return;
+
+            SpawnPlants(rayHit.point, seed);
         }
         else if(rayHit.collider.CompareTag("Root") && dayCycleManager.isNight)
         {
@@ -61,6 +65,14 @@ public class GameManager : MonoBehaviour
 
             root.Feed();
             root.Grow();
+        }
+        else if (rayHit.collider.CompareTag("Bug") && !dayCycleManager.isNight)
+        {
+            Bug bug = rayHit.collider.GetComponent<Bug>();
+
+            if (bug == null) return;
+
+            inventory.AddBug(bug.Collect());
         }
     }
 
