@@ -135,6 +135,8 @@ MonoBehaviour:
     GivenNumber: 0
   givenSeed: {fileID: 0}
   spawnBugLevel: 2
+  seedPrefab: {fileID: 1216659258317728711, guid: eadf61904693be741ac3879e160c8aa1, type: 3}
+  spawnSeedRate: 2
 --- !u!95 &-4558806110668915788
 Animator:
   serializedVersion: 3

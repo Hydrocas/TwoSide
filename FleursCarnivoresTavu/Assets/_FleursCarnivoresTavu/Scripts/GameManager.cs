@@ -88,6 +88,15 @@ public class GameManager : MonoBehaviour
             inventory.AddBug(bug.Collect());
             soundManager.InsectPickSound();
         }
+        else if (rayHit.collider.CompareTag("Seed") && !dayCycleManager.isNight)
+        {
+            Seed seed = rayHit.collider.GetComponent<Seed>();
+
+            if (seed == null) return;
+
+            inventory.AddSeed(seed.Collect());
+            soundManager.SeedPickSound();
+        }
     }
 
     private void SpawnPlants(Vector3 spawnPos, SeedData seedData)
@@ -107,7 +116,7 @@ public class GameManager : MonoBehaviour
         Vector2 randomCircle;
         for (int i = startPlantedSeed.Length - 1; i >= 0; i--)
         {
-            randomCircle = UnityEngine.Random.insideUnitCircle * UnityEngine.Random.Range(0f, 5f);
+            randomCircle = UnityEngine.Random.insideUnitCircle * UnityEngine.Random.Range(4f, 5f);
 
             SpawnPlants(
                 Vector3.up * (garden.Height / 2) +

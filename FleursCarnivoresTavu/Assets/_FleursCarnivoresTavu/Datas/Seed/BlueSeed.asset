@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BlueSeed
   m_EditorClassIdentifier: 
   type: 0
-  sprite: {fileID: 21300000, guid: abc013b28b551bb47a6e1e3d4de0f6e1, type: 3}
+  sprite: {fileID: 21300000, guid: e8071b942cb9dce4ebff0fecbf326cb0, type: 3}
   flower: {fileID: 3378030450248277037, guid: 3515a7749a6d55f498864dc7981237d3, type: 3}
   root: {fileID: 7035876013978309551, guid: 5992dd613782f4b468a009f939431447, type: 3}

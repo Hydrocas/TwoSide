@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Music/Music
   guid: c641d544b0219746b5f24f22c100380c
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -38,8 +37,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Plant Eat
   guid: 6cf77379b3410c429a9427107a347052
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -61,8 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/UI/UI Click
   guid: f3ddb5dd09610a4f8a88962305c9c8ac
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -84,8 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Level Flip
   guid: e06073a68832d64a9f8c960f3402188c
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -127,8 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Seed Plant
   guid: 62aa318c2c39e44696b4a30dfe4411c8
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -151,24 +146,13 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 4559863989374495261}
   - {fileID: 2872938722173693251}
-  EditorEvents:
-  - {fileID: 1940175779279803069}
-  - {fileID: 2471223872190566390}
-  - {fileID: -4022091199255326372}
-  - {fileID: -8767866523643792743}
-  - {fileID: 1790801093946192647}
-  - {fileID: 2888535409354310136}
-  - {fileID: -9126716355009574421}
-  - {fileID: 91042563182555743}
-  - {fileID: -7350158609200707285}
-  - {fileID: 2357891852806106530}
-  - {fileID: -8703516936564047605}
+  EditorEvents: []
   EditorParameters: []
   MasterBanks:
   - {fileID: 2872938722173693251}
   StringsBanks:
   - {fileID: 4559863989374495261}
-  stringsBankWriteTime: 637605011848615756
+  stringsBankWriteTime: 637603080725116251
   cacheVersion: 6
 --- !u!114 &91042563182555743
 MonoBehaviour:
@@ -184,8 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Insect Buzz
   guid: d06de3f0fd92814383e73f8353823ba9
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -207,8 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Seed Pick
   guid: 8d224a1c8cbb51458d37732bf46c32f1
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -230,8 +212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Amb
   guid: 177e0e47b7440247ab6bb8ad817b45b6
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -254,8 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Insect Pick
   guid: ec291ef281aeb54abb12c55f852101c5
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -277,8 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Plant Die
   guid: 4d289a792fcc0c46aebbdaf7b94b936e
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -301,7 +280,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637605011848495796
+  lastModified: 637603080725096233
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -319,8 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/UI/UI Move
   guid: 9555d1f48c757d4789f279b83fb35968
-  Banks:
-  - {fileID: 2872938722173693251}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -363,11 +341,11 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637605011848615756
+  lastModified: 637603080725116251
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1276
+    Value: 688
   Exists: 1
 --- !u!114 &7318549153185766565
 MonoBehaviour:
