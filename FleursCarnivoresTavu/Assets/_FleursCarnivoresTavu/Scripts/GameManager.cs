@@ -85,11 +85,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void SpawnPlants(Vector3 spawnPos, SeedInventory seedData)
+    private void SpawnPlants(Vector3 spawnPos, SeedData seedData)
     {
-        Flower flower = Instantiate(seedData.SeedData.flower, spawnPos, Quaternion.identity, garden.GardenGround.transform);
+        Flower flower = Instantiate(seedData.flower, spawnPos, Quaternion.identity, garden.GardenGround.transform);
         spawnPos.y -= garden.Height;
-        Root root = Instantiate(seedData.SeedData.root, spawnPos, Quaternion.AngleAxis(180, Vector3.forward), garden.GardenGround.transform);
+        Root root = Instantiate(seedData.root, spawnPos, Quaternion.AngleAxis(180, Vector3.forward), garden.GardenGround.transform);
 
         flowerManager.AddFlower(flower);
         rootManager.AddRoot(root, flower);
