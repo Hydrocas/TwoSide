@@ -2393,6 +2393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTimeRange: {x: 0.1, y: 0.8}
+  bugPrefab: {fileID: 8128900655619312933, guid: 78d5f1479d64bb248be96fbe13cd0b76, type: 3}
 --- !u!4 &1826092610
 Transform:
   m_ObjectHideFlags: 0

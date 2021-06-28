@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: RedBug
   m_EditorClassIdentifier: 
   type: 1
-  sprite: {fileID: 21300000, guid: abc013b28b551bb47a6e1e3d4de0f6e1, type: 3}
+  sprite: {fileID: 21300000, guid: a339d431575833945b16e89d70afc67d, type: 3}
+  animatorController: {fileID: 22100000, guid: 0715a88b3c9844b458cc78c30e119ff2, type: 2}

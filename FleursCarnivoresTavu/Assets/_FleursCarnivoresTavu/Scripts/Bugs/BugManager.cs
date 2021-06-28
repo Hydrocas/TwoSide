@@ -5,8 +5,10 @@ using UnityEngine;
 public class BugManager : StateMonoBehaviour
 {
     [SerializeField] private Vector2 spawnTimeRange = new Vector2(0.1f, 0.8f);
+    [SerializeField] private Bug bugPrefab = null;
     private DayCycleManager dayCycleManager;
     private List<BugSpawnData> currentBugsToSpawn;
+    private List<Bug> bugs;
 
     private void Awake()
     {
@@ -22,6 +24,7 @@ public class BugManager : StateMonoBehaviour
     {
         this.dayCycleManager = dayCycleManager;
         currentBugsToSpawn = new List<BugSpawnData>();
+        bugs = new List<Bug>();
     }
 
     public void AddBugToSpawn(Flower flower)
@@ -44,6 +47,12 @@ public class BugManager : StateMonoBehaviour
 
     public void SetModeNight()
     {
+        for (int i = bugs.Count - 1; i >= 0; i--)
+        {
+            bugs[i].Disapear();
+        }
+
+        bugs.Clear();
         currentBugsToSpawn.Clear();
         SetModeVoid();
     }
@@ -72,6 +81,16 @@ public class BugManager : StateMonoBehaviour
 
     private void SpawnBug(BugData bugData, Flower flower)
     {
+        Bug bug = Instantiate(bugPrefab, (flower.transform.position + Vector3.up), Quaternion.identity);
+        bug.Init(bugData);
+        bugs.Add(bug);
+        bug.OnCollected += Bug_OnCollected;
+
         Debug.Log("Spawn " + bugData.Type + " bug");
+    }
+
+    private void Bug_OnCollected(Bug bug)
+    {
+        bugs.Remove(bug);
     }
 }

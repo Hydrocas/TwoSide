@@ -72,6 +72,12 @@ public class Root : Plant
     {
         BugStack[] currentAskedBug = CurrentAskedBug;
 
+        if(currentAskedBug == null)
+        {
+            RemoveUI();
+            return;
+        }
+
         for (int i = 0; i < currentAskedBug.Length; i++)
         {
             canvasGroup[i].alpha = 1;

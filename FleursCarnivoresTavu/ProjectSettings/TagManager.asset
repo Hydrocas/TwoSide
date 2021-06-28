@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Garden
   - Root
+  - Bug
   layers:
   - Default
   - TransparentFX

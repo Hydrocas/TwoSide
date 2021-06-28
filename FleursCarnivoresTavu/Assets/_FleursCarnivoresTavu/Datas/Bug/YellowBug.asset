@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: YellowBug
   m_EditorClassIdentifier: 
   type: 2
-  sprite: {fileID: 21300000, guid: abc013b28b551bb47a6e1e3d4de0f6e1, type: 3}
+  sprite: {fileID: 21300000, guid: d027cf5983207a54993628b510c56caf, type: 3}
+  animatorController: {fileID: 22100000, guid: d9fd6dd830016aa4b93859cb0e2cc011, type: 2}

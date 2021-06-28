@@ -1,18 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Bug : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private BugData bugData;
+    public event Action<Bug> OnCollected;
+
+    public void Init(BugData bugData)
     {
-        
+        this.bugData = bugData;
+        GetComponent<Animator>().runtimeAnimatorController = bugData.AnimatorController;
     }
 
-    // Update is called once per frame
-    void Update()
+    public BugData Collect()
     {
-        
+        OnCollected?.Invoke(this);
+        Disapear();
+        return bugData;
+    }
+
+    public void Disapear()
+    {
+        Destroy(gameObject);
     }
 }
