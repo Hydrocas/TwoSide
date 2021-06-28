@@ -8,4 +8,8 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: YellowRoot
   m_Controller: {fileID: 9100000, guid: b1c33664111f934479849ef31f8fe499, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b66a24b8893e74c4c8fb314d166dbf6b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6e93bed8a8496d24bae8e720163a47e7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d690c8ff9dffca34aa71eea6d80de547, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 93e2e270974b9ee45a560003b38c1fd8, type: 2}
