@@ -208,6 +208,9 @@
 		<property name="length">
 			<value>2.6666666666666665</value>
 		</property>
+		<property name="volume">
+			<value>-2.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{e6362181-762e-4499-ab6a-12ce72940e9c}</destination>
 		</relationship>
