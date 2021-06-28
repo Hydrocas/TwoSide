@@ -36,12 +36,14 @@ public class GameManager : MonoBehaviour
     private void DayCycleManager_OnNight()
     {
         flowerManager.SetNightMode();
+        rootManager.SetModeNight();
         bugManager.SetModeNight();
     }
 
     private void DayCycleManager_OnDay()
     {
         flowerManager.SetDayMode();
+        rootManager.SetModeDay();
         bugManager.SetModeDay();
     }
 

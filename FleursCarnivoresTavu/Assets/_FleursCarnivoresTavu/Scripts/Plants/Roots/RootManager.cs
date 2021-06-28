@@ -16,4 +16,20 @@ public class RootManager : MonoBehaviour
         roots.Add(root);
         root.Init(flower);
     }
+
+    public void SetModeDay()
+    {
+        for (int i = 0; i < roots.Count; i++)
+        {
+            roots[i].SetDayMode();
+        }
+    }
+
+    public void SetModeNight()
+    {
+        for (int i = 0; i < roots.Count; i++)
+        {
+            roots[i].SetNightMode();
+        }
+    }
 }
