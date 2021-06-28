@@ -9,10 +9,12 @@ public class BugManager : StateMonoBehaviour
     private DayCycleManager dayCycleManager;
     private List<BugSpawnData> currentBugsToSpawn;
     private List<Bug> bugs;
+    private SoundManager soundManager;
 
     private void Awake()
     {
         SetModeVoid();
+        soundManager = GameObject.FindGameObjectWithTag("MusicManager").gameObject.GetComponent<SoundManager>();
     }
 
     private void Update()
@@ -87,6 +89,8 @@ public class BugManager : StateMonoBehaviour
         bug.OnCollected += Bug_OnCollected;
 
         Debug.Log("Spawn " + bugData.Type + " bug");
+
+        soundManager.InsectBuzzSound();
     }
 
     private void Bug_OnCollected(Bug bug)

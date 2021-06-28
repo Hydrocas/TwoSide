@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private Controller controller;
     private RootManager rootManager;
     private FlowerManager flowerManager;
+    private SoundManager soundManager;
 
 
     private void Awake()
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         controller = GetComponent<Controller>();
         rootManager = GetComponent<RootManager>();
         flowerManager = GetComponent<FlowerManager>();
+        soundManager = GameObject.FindGameObjectWithTag("MusicManager").gameObject.GetComponent<SoundManager>();
 
         dayCycleManager.Init();
         controller.Init(mainCamera);
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
             if (seed == null) return;
 
             SpawnPlants(rayHit.point, seed);
+            soundManager.SeedPlantSound();
         }
         else if(rayHit.collider.CompareTag("Root") && dayCycleManager.isNight)
         {
@@ -74,6 +77,7 @@ public class GameManager : MonoBehaviour
 
             root.Feed();
             root.Grow();
+            soundManager.PlantEatSound();
         }
         else if (rayHit.collider.CompareTag("Bug") && !dayCycleManager.isNight)
         {
@@ -82,6 +86,7 @@ public class GameManager : MonoBehaviour
             if (bug == null) return;
 
             inventory.AddBug(bug.Collect());
+            soundManager.InsectPickSound();
         }
     }
 
@@ -93,6 +98,8 @@ public class GameManager : MonoBehaviour
 
         flowerManager.AddFlower(flower);
         rootManager.AddRoot(root, flower);
+
+        
     }
 
     public void StartSpawn()
