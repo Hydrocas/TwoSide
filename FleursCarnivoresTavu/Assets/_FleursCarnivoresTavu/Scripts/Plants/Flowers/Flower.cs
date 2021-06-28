@@ -62,7 +62,7 @@ public class Flower : Plant
 
     private void Update()
     {
-        if(isDay && growthLevel == spawnBugLevel && !isSeedSpawned)
+        if(isDay && growthLevel == maxGrowthLevel && !isSeedSpawned)
         {
             elapsedTime += Time.deltaTime;
 
