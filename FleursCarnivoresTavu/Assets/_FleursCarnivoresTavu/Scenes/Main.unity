@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gardenGround: {fileID: 14937360}
   background: {fileID: 1592044969}
+  gardenCollider: {fileID: 0}
 --- !u!4 &4893106
 Transform:
   m_ObjectHideFlags: 0
@@ -922,11 +923,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ff5ad343dc54f47845065b3b379a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seedData:
-  - {fileID: 11400000, guid: 8c4ed8330377f63489f5ba7c4a8a10e7, type: 2}
-  - {fileID: 11400000, guid: 17f387a7dd1850d47b2c0bd96f4a9132, type: 2}
-  - {fileID: 11400000, guid: f1f33a884dd77a6419d738af248368a5, type: 2}
-  bugData: []
+  seedInventory: []
+  bugInventory: []
 --- !u!114 &454813520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2242,7 +2240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1265763140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2255,6 +2253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cb9e663b0191f46a8a133e5032752c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicManager: {fileID: 0}
 --- !u!4 &1265763141
 Transform:
   m_ObjectHideFlags: 0

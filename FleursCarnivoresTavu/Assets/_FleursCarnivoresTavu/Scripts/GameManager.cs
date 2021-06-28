@@ -24,12 +24,13 @@ public class GameManager : MonoBehaviour
         rootManager = GetComponent<RootManager>();
         flowerManager = GetComponent<FlowerManager>();
 
+        dayCycleManager.Init();
         controller.Init(mainCamera);
         garden.Init();
         flowerManager.Init(bugManager);
         rootManager.Init();
         bugManager.Init(dayCycleManager);
-        dayCycleManager.Init();
+        
 
         dayCycleManager.OnDay += DayCycleManager_OnDay;
         dayCycleManager.OnNight += DayCycleManager_OnNight;
