@@ -6,6 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class S_MenuManager : MonoBehaviour
 {
+    [SerializeField] private MusicManager musicManager;
+
+    public void Awake()
+    {
+        musicManager.Init();
+    }
 
     public void Quit()
     {
@@ -15,7 +21,9 @@ public class S_MenuManager : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
+        musicManager.DaySoundState();
         SceneManager.LoadScene(sceneName);
+
     }
 
     public void SelectButton(GameObject button)
