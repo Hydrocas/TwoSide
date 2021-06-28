@@ -693,6 +693,10 @@ MonoBehaviour:
   garden: {fileID: 4893105}
   mainCamera: {fileID: 1358108601}
   bugManager: {fileID: 1826092609}
+  startPlantedSeed:
+  - {fileID: 11400000, guid: f1f33a884dd77a6419d738af248368a5, type: 2}
+  - {fileID: 11400000, guid: 8c4ed8330377f63489f5ba7c4a8a10e7, type: 2}
+  - {fileID: 11400000, guid: 17f387a7dd1850d47b2c0bd96f4a9132, type: 2}
 --- !u!114 &454813518
 MonoBehaviour:
   m_ObjectHideFlags: 0

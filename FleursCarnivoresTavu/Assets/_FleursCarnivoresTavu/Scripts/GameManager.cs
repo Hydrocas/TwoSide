@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Garden garden = null;
     [SerializeField] private Camera mainCamera = null;
     [SerializeField] private BugManager bugManager = null;
+    [SerializeField] private SeedData[] startPlantedSeed = null;
 
     private DayCycleManager dayCycleManager;
     private Inventory inventory;
@@ -31,6 +32,8 @@ public class GameManager : MonoBehaviour
 
         dayCycleManager.OnDay += DayCycleManager_OnDay;
         dayCycleManager.OnNight += DayCycleManager_OnNight;
+
+        StartSpawn();
     }
 
     private void DayCycleManager_OnNight()
@@ -84,5 +87,19 @@ public class GameManager : MonoBehaviour
 
         flowerManager.AddFlower(flower);
         rootManager.AddRoot(root, flower);
+    }
+
+    public void StartSpawn()
+    {
+        Vector2 randomCircle;
+        for (int i = startPlantedSeed.Length - 1; i >= 0; i--)
+        {
+            randomCircle = UnityEngine.Random.insideUnitCircle * UnityEngine.Random.Range(0f, 5f);
+
+            SpawnPlants(
+                Vector3.up * (garden.Height / 2) +
+                new Vector3(randomCircle.x, 0, randomCircle.y),
+                startPlantedSeed[i]);
+        }
     }
 }
