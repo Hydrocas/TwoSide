@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: YellowRootIdle
+  m_Name: YellowFlower0
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,11 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 6e88d2ecb8f1b3c4dbecf019e8739a59, type: 3}
+      value: {fileID: 21300000, guid: 61b582f93e54ed54d9e837e75d2a4136, type: 3}
     - time: 0.016666668
-      value: {fileID: 21300000, guid: 6d354e988439e30428c423bcb2e5d459, type: 3}
+      value: {fileID: 21300000, guid: ef9b9970061c86f4eaf158f15b7bafda, type: 3}
     - time: 0.033333335
-      value: {fileID: 21300000, guid: 8b1cd51901677d743894cdf7cf19fd77, type: 3}
-    - time: 0.05
-      value: {fileID: 21300000, guid: fc6253ce839251c4ca358dd04bcfe80b, type: 3}
+      value: {fileID: 21300000, guid: ac826f3aea4ee194faa72cfaf1ea3ee4, type: 3}
     attribute: m_Sprite
     path: Renderer
     classID: 212
@@ -46,16 +44,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 6e88d2ecb8f1b3c4dbecf019e8739a59, type: 3}
-    - {fileID: 21300000, guid: 6d354e988439e30428c423bcb2e5d459, type: 3}
-    - {fileID: 21300000, guid: 8b1cd51901677d743894cdf7cf19fd77, type: 3}
-    - {fileID: 21300000, guid: fc6253ce839251c4ca358dd04bcfe80b, type: 3}
+    - {fileID: 21300000, guid: 61b582f93e54ed54d9e837e75d2a4136, type: 3}
+    - {fileID: 21300000, guid: ef9b9970061c86f4eaf158f15b7bafda, type: 3}
+    - {fileID: 21300000, guid: ac826f3aea4ee194faa72cfaf1ea3ee4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.06666667
+    m_StopTime: 0.050000004
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

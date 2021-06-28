@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: RedFlower
+  m_Controller: {fileID: 9100000, guid: 6b4d8649541d6874ebb24345158f3260, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d77e1e90c65c81e4ca056ada9b6805fe, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 52c8adfeee84f94418e25d6c13fd2ffa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b5987341f63bb754f8e246ea00b58749, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 18f7731cc11cbd047b0f8b667e160d0e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 485d905b9f10da44fb324ac91b89200f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 79db9501645e1064eaea446b34f239e0, type: 2}

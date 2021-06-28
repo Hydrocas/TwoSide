@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RedRootEat 1
+  m_Name: YellowRootEat
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,13 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: e589a998d4463c0408000fba376f42be, type: 3}
+      value: {fileID: 21300000, guid: 6e88d2ecb8f1b3c4dbecf019e8739a59, type: 3}
     - time: 0.016666668
-      value: {fileID: 21300000, guid: 70a8802349c0cca40b08d8fe93ba694f, type: 3}
+      value: {fileID: 21300000, guid: e7cef555ba9b68a4aab6e5600fe48e9f, type: 3}
     - time: 0.033333335
-      value: {fileID: 21300000, guid: 3b0ef3cc8dd33e648a47e85b8ef94ff7, type: 3}
+      value: {fileID: 21300000, guid: 07e41ca9399c22a4f9250b53ee79de2e, type: 3}
     - time: 0.05
-      value: {fileID: 21300000, guid: 9c563bf351c314346aacc1d90939cd61, type: 3}
+      value: {fileID: 21300000, guid: 8bb5045b5d3fe0943a10270ecadf10eb, type: 3}
     attribute: m_Sprite
     path: Renderer
     classID: 212
@@ -46,10 +46,10 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: e589a998d4463c0408000fba376f42be, type: 3}
-    - {fileID: 21300000, guid: 70a8802349c0cca40b08d8fe93ba694f, type: 3}
-    - {fileID: 21300000, guid: 3b0ef3cc8dd33e648a47e85b8ef94ff7, type: 3}
-    - {fileID: 21300000, guid: 9c563bf351c314346aacc1d90939cd61, type: 3}
+    - {fileID: 21300000, guid: 6e88d2ecb8f1b3c4dbecf019e8739a59, type: 3}
+    - {fileID: 21300000, guid: e7cef555ba9b68a4aab6e5600fe48e9f, type: 3}
+    - {fileID: 21300000, guid: 07e41ca9399c22a4f9250b53ee79de2e, type: 3}
+    - {fileID: 21300000, guid: 8bb5045b5d3fe0943a10270ecadf10eb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

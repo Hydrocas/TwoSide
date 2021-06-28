@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: YellowFlower
+  m_Controller: {fileID: 9100000, guid: 6b4d8649541d6874ebb24345158f3260, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d77e1e90c65c81e4ca056ada9b6805fe, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ce8f9912896326e428977538f3649890, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b5987341f63bb754f8e246ea00b58749, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a39b0b3dc33c1f743a14fec08547af95, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 485d905b9f10da44fb324ac91b89200f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9404e85267db42248ae0c8ede8820838, type: 2}
